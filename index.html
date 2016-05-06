@@ -8,8 +8,24 @@
     <link rel="stylesheet" href="css/foundation.min.css">
   </head>
   <body>
-    <h1>Esqueleto</h1>
+    <center>
+        <h1>Modal</h1>
+    </center>
+    <a class="button success" data-open="miModal">Botón Modal</a>
+    
+    <div id="miModal" class="reveal" data-reveal="" data-animation-in="spin-in" data-animation-out="spin-out">
+        <h2>Título modal</h2>
+        <p>Contenido modal</p>
+        
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div> <!-- /#miModal.reveal -->
+    
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
   </body>
 </html>
